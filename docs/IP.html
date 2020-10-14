@@ -41,19 +41,28 @@
 </nav>
 
 <div class="media">
-    <img src="../images/image4.jpg" style="margin: 40px" class="img-thumbnail" alt="..." width="300" height="500">
+    <div class="card" style="width: 18rem; margin-right: 20px; margin-left: 10px">
+        <img src="../images/image5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"><h4> Packets</h4>
+            Sending an image to your friend or upload to a website,that is made up of billions of bits 0s and 1s, too many to send along in
+            one packet. The computer sending the image can break it into smaller parts called packets. Each packet has the internet
+            address of where it came from and where it's going. Routers act like traffic managers to keep the packets moving through the networks smoothly.
+
+
+            </p>
+        </div>
+    </div>
+
     <div class="media-body">
         <div class="row">
             <div class="col-8">
-                <h5 class="mt-0 ">The Internet is the next big thing!</h5>
-
-                <div class="accordion" id="accordionExample">
-
+    <div class="accordion" id="accordionExample">
                     <div class="card">
                         <div class="card-header" id="headingZero">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
-                                    Overview
+                                    IP ADDRESSES
                                 </button>
                             </h2>
                         </div>
@@ -68,13 +77,19 @@
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Internet of things.
+                                    PACKETS
                                 </button>
                             </h2>
                         </div>
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
+                                The way information is transferred from one computer to another is pretty interesting.
+                                Information goes from one computer to another in what we call a packet of information and
+                                a packet travels from one place to another on the internet a lot like how you might get from
+                                one place to another in a car. depending on traffic congestion you may choose a different route to get to the same place.
+                                Digital Information can be sent with ip packets but there are some limits.Each packet has the internet
+                                address of where it came from and where it's going.
 
                             </div>
                         </div>
@@ -83,13 +98,17 @@
                         <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    The Internet: Behind the Web!
+                                    ROUTERS
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body">
-                                </p>
+                                Routers act like traffic managers to keep the packets moving through the networks. If one route is congested, individuals
+                                packets may travel different routes through the Internet and arrive to the destination at slightly different time and out of order.
+                                Every router keeps track of multiple paths for sending packets, and it chooses the cheapest available path for each piece of data
+                                based on destination ip address for the packet. Network can keep sending packets even if somethings goes wrong. This is the basic for a
+                                key principle of the Internet:Reliability.
 
 
                             </div>
@@ -99,46 +118,22 @@
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Internet
+                                    RELIABILITY
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    In the late 1960s
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                            <div class="card-body">
+                            TCP- Transmission Control Protocol
+                                TCP manages the sending and receiving of all your data as packets. when the packets arrive, TCP does a full inventory
+                                and send back acknowledgements of each packets received. If packets are there, TCP sign for delivery and done. If TCP finds
+                                some packets are missing won't sign.
 
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    1983
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                            <div class="card-body">
 
-                            </div>
-                        </div>
-                    </div>
+
 
                 </div>
 
@@ -161,7 +156,9 @@
             </div>
 
 
-
+        </div>
+    </div>
+</div>
         </div>
 
     </div>

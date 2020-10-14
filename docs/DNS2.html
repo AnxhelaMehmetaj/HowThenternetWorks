@@ -40,7 +40,24 @@
   </ol>
 </nav>
 <div class="media">
-  <img src="../images/image7.jpg" style="margin: 20px; margin-top: 20px" class="img-thumbnail" alt="..." width="300" height="300">
+  <div class="card" style="width: 28rem; margin-right: 20px; margin-left: 10px">
+    <img src="../images/dns3.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">
+        <h5>First Query</h5>
+       <p> 1.Client 1 queries local DNS Server (1) for host www.mydomain.com.
+        2.Local DNS server doesn't know the Answer so it queries a Root DNS serever.(2)
+        3.Root server refers DNS server 1 to DNS server 3 responsible for .com domain name space.
+        4.DNS server 3 refers DNS server 1 to DNS server 4 responsible for the mydomain domain name space.
+         5. DNS server 4 returns the answer to DNS server 1. DNS server 1 returns the answer to client 1.</p>
+        <h5> Second Query </h5>
+      <p>1.Client 2 queries local DNS server(1) for host www.mydomain.com
+        2.DNS server 1 return the answer to client 2 from it's DNS cache.</p>
+      </p>
+    </div>
+  </div>
+
+
   <div class="media-body">
     <h5 class="mt-0 "> DOMAIN NAME SERVICES </h5>
 
@@ -50,10 +67,10 @@
       <div class="row">
         <div class="col-8">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">The Beginning</a>
+            <li class="breadcrumb-item"><a href="#">  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">DNS History</a>
 
             </a></li>
-            <li class="breadcrumb-item"><a href="#">   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Search</button>
+            <li class="breadcrumb-item"><a href="#">   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">DNS Structure</button>
 
             </a></li>
           </ol>
@@ -65,18 +82,11 @@
         <div class="collapse multi-collapse" id="multiCollapseExample1">
           <div class="card card-body">
             <p style="margin: 20px; line-height: 2">
-              There was a time when searching stuff on the Internet wasn’t as easy as just going on Google
-              and getting millions of results in seconds. It has to be created and it these tech startups
-              that were creating these search engines had to get funding and some way to make money. When
-              venture capitalists saw how to make money on the Internet, they went to Jerry Yang and David
-              Filo, the co-founders of Yahoo. Jerry and David wanted to advertise on their search engine to
-              millions of their users, but were very skeptical at the time as they thought they would receive
-              a lot of backlash from their users. However, once advertisements were put in place, Yahoo made
-              millions, and no one seemed to care about ads, which spawned many competitors in the search
-              engine game.
+              DNS was originally created to be an open and public communication protocol for the government and
+              educational institutions. But DNS is susceptible to cyber attacks like dns spoofing.
+              That’s when a hacker taps into a dns server and changes it to match a domain name with a wrong ip address.
+              They send people to an imposter website.
             </p>
-
-
           </div>
         </div>
       </div>
@@ -84,24 +94,11 @@
         <div class="collapse multi-collapse" id="multiCollapseExample2">
           <div class="card card-body">
             <p style="margin: 20px; line-height: 2">
-              After a while, these search engines became very entangled and obsessed with the idea of making money
-              and forgot their initial intention of providing meaningful and useful search results to their users.
-              Excite and Google soon become another search engine looking to become the most used search engine
-              on the Internet. Google’s take on their search engine provided a raking system that kept track of
-              how many times a link was clicked on and would show the most clicked link at the top of a search result.
-              One of Excite’s executives saw how vastly better the google search engine was compared to theirs that they
-              wanted google to merge with Excite to take down one of their competitors, Yahoo. No deal was able to be made
-              as Excite couldn’t find a way to profit from search engines like google which only ranked clicks on websites.
-              When a professor at Stanford University saw the opportunity with Google, he introduced them to a wealthy
-              friend of his that would be able to fund Google. Shortly after that, Google was flooded with funds. Google
-              running out of ideas of how to make money needed another source of income. In a meeting with Idealabs
-              CEO, the google founders stole Idealabs idea of paid advertising for links next to the actual results of
-              links and keys that could be sold to advertisers. Idealabs took Google to court for stealing their idea
-              and settled it there for a relatively small price. Ultimately, Google was now making even more money than
-              ever before and decide to take their company public. Shortly after the IPO, the google founders quickly
-              become the worlds richest people. Not stopping and always looking for a way to make more money,
-              Google created many more services that people could use and bought out many other companies that
-              could benefit Google in the long.
+              A system called the DNS associated names like www.example.com with the corresponding addresses. Computer uses the
+              DNS to look up domain names and get the associated IP address which is used to connect your computer to
+              the destination on the internet. One DNS server cannot handle all requests from all devices.
+              So, DNS servers are distributed into a hierarchy, and are divided into zones,
+              splitting up responsibility for the major domain like org, com, .net, etc.
             </p>
           </div>
         </div>
