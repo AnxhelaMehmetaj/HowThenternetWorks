@@ -52,27 +52,69 @@
 </nav>
 <div class="media">
 
-    <img src="../images/image5.jpg" style="margin: 20px; margin-top:20px" class="img-thumbnail" alt="..." width="300" height="300">
+    <div class="card" style="width: 18rem; margin-right: 20px">
+        <img src="../images/image5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text"><h5>Example</h5>
+            If you log into Tumblr and load login page, so you send a GET request to Tumbrl's server that says GET/login and tells server that
+            you want all of the HTML code for Tumblr login page.
+
+            </p>
+        </div>
+    </div>
+
+
+
     <div class="media-body">
 
         <ul>
-            <h5 class="mt-0 "> The true story of the Internet! </h5>
+            <h5 class="mt-0 "> W3C,HTML,CSS </h5>
 
             <div class="row">
                 <div class="col-4">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Overview</a>
-                        <a class="list-group-item list-group-item-action" id="list-nvm-list" data-toggle="list" href="#list-nvm" role="tab" aria-controls="nvm">Netscape vs Microsoft</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Tim Berners-Lee</a>
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">W3C</a>
+                        <a class="list-group-item list-group-item-action" id="list-nvm-list" data-toggle="list" href="#list-nvm" role="tab" aria-controls="nvm">HTML</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">CSS</a>
 
                     </div>
                 </div>
                 <div class="col-8">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff,
+                            and the public work together to develop Web standards.
+                            Led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential.
+                           <h5>MISSION</h5>
+                            The W3C mission is to lead the World Wide Web to its full potential by developing protocols and guidelines that ensure the long-term growth of the Web.
+                            <h5>Vision</h5>
+                            W3C's vision for the Web involves participation, sharing knowledge, and thereby building trust on a global scale.
+                            <h5>Process</h5>
+                            Most W3C work revolves around the standardization of Web technologies. To accomplish this work, W3C follows processes that promote the development of high-quality standards based on community consensus; an introduction to the W3C Process gives a sense of how W3C gets work done. All stakeholders can have a voice in the development of W3C standards,
+                            including Members large and small, as well as the public. W3C processes promote fairness, responsiveness, and progress: all facets of the W3C mission.
 
                         </div>
                         <div class="tab-pane fade" id="list-nvm" role="tabpanel" aria-labelledby="list-nvm-list">
+                            <h4>HTTP</h4>
+                            Computer starts talking to a server and ask for a website and that server starts to talk back to your computer in a language called
+                            HTTP. HTTP stands for HYPERTEXT TRANSFER PROTOCOLS. This is the language that computer uses to ask another computer for a document
+                            If you were to intercept the conversation between your computer and a web server on  the internet, it's made up of something called
+                            "GET" requests.
+                            <h4>HTML</h4>
+                            HTML stands for HyperText Markedup Language. A text of a web page is included directly in the HTML but other parts like Images or videos,
+                            are separate files with their own URLs that need to be requested. The browser sends separate HTTP requests for each of them and and dispay them as they arrive
+                            If a web page has a lot of different images, each of them causes a separate HTTP request and the page loads slower.
+                            Not only we are requesting pages with GET requests, but also sometimes we send information like when we fill out a form. Browser send
+                            this information as a plain text to the web server using an HTTP POST request.
+                            <h4>Steps</h4>
+                            <li>Login Tumblr (this means send POST requests that hase some data like username and password).</li>
+                            <li>This does to Tumblr server and send back success. LOGGED IN </li>
+                            <li>Along with web page there are some invisible cookie data tha browser sees.</li>
+                            <li>Cookes (what websites use to remember who you are) and inside the cookies is an ID card that identifies you.  </li>
+                            <h4> Secure website</h4>
+                            To prevent website from snooping & Tampering using something called Secure Socket Layer and its successor Transport Layer Security.
+                            SSL And TSL are active when the little lack appears in  web Browser address next to HTTPS.
+                            SSL is a digital certificate which is like an official ID card just like government issues IDs or passports.
 
                         </div>
                         <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
